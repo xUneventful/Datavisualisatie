@@ -1,30 +1,30 @@
 <html>
   <head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
-        ]);
-
-        var options = {
-          title: 'My Daily Activities',
-          pieHole: 0.4,
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-        chart.draw(data, options);
-      }
-    </script>
+    <script type="text/javascript" src="drugs.js"></script>
   </head>
   <body>
-    <div id="donutchart" style="width: 900px; height: 500px;"></div>
+  <!--Table and divs that hold the pie charts-->
+    <table class="softDrugs">
+      <tr>
+        <td><div id="Alcohol_chart_div"></div></td>
+        <td><div id="Tobacco_chart_div"></div></td>
+        <td><div id="Marijuana_chart_div"></div></td>
+        <td><div id="Sedatives_chart_div"></div></td>
+      </tr>
+    </table>
+    
+    <table class="hardDrugs">
+      <tr>
+        <td><div id="Cocaine_chart_div"></div></td>
+        <td><div id="Crack_chart_div"></div></td>
+        <td><div id="Hallucinogen_chart_div"></div></td>
+        <td><div id="Heroin_chart_div"></div></td>
+        <td><div id="Inhalants_chart_div"></div></td>
+        <td><div id="PainRelievers_chart_div"></div></td>
+        <td><div id="Stimulants_chart_div"></div></td>
+        <td><div id="Tranquilizers_chart_div"></div></td>
+      </tr>
+    </table>
   </body>
 </html>
