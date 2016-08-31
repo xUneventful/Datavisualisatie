@@ -6,7 +6,7 @@
   <body>
 
  <!--Table and divs that hold the pie charts-->
-    <table class="softDrugs">
+    <table id="softDrugs" style="display: inline-block;">
       <tr>
         <td><div id="Alcohol_chart_div"></div></td>
         <td><div id="Tobacco_chart_div"></div></td>
@@ -15,7 +15,7 @@
       </tr>
     </table>
     
-    <table class="hardDrugs">
+    <table id="hardDrugs" style="display: inline-block;">
       <tr>
         <td><div id="Cocaine_chart_div"></div></td>
         <td><div id="Crack_chart_div"></div></td>
@@ -27,6 +27,9 @@
         <td><div id="Tranquilizers_chart_div"></div></td>
       </tr>
     </table>
+    
+    <a id="loginLink" onclick="toggleTable(softDrugs);" href="#">Soft Drugs</a>  
+    <a id="loginLink" onclick="toggleTable(hardDrugs);" href="#">Hard Drugs</a>
 <body>
 </body>
 </html>

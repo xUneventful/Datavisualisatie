@@ -120,3 +120,38 @@
         var chart = new google.visualization.PieChart(document.getElementById('Sedatives_chart_div'));
         chart.draw(data, options);
       }
+	  
+	  // Callback that draws the pie chart for Cocaine.
+      function drawCocaineChart() {
+
+        // Create the data table for Cocaine chart.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'frequency');
+        data.addColumn('number', 'Users');
+        data.addRows([
+          ['Less than monthly', 2941],
+          ['Monthly', 2197],
+          ['Weekly', 4542],
+          ['Daily', 4710],
+          ['Not used', 4225]
+        ]);
+
+        // Set options for Cocaine pie chart.
+        var options = {title:'Cocaine',
+                       width:300,
+                       height:300,
+					   pieHole: 0.9,
+		  			   legend: 'none',};
+
+        // Instantiate and draw the chart for Cocaine.
+        var chart = new google.visualization.PieChart(document.getElementById('Cocaine_chart_div'));
+        chart.draw(data, options);
+      }
+	  
+	  // Toggle tables
+	  //function toggleTable() {
+    	//var sTable = document.getElementById("softDrugs");
+   		//sTable.style.display = (sTable.style.display == "table") ? "none" : "table";
+		//var hTable = document.getElementById("hardDrugs");
+		//hTable.style.display = (hTable.style.display == "table") ? "none" : "table";
+	  //}

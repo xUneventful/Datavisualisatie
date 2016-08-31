@@ -6,9 +6,9 @@
   <body>
   
   <!-- randomly displayed image. -->
-  <img src=".../images/image_<?php $random = rand(1,n); echo $random; ?>.png" alt="[ Random Image ]" height="50" width="50" />
+  <img src=".../images/image_<?php $random = rand(1,n); echo $random; ?>.png" alt="[ Random Image ]" height="500" width="500" /><br /><br />
   
   <!-- show stats button -->
-  <a href="stats.php">Go to Google</a>
+  <a href="stats.php">Show Stats</a>
   </body>
 </html>
